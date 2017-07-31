@@ -1,0 +1,23 @@
+<input type="textbox" id="t"/>
+<input type="button" value="AddItem"
+onclick="addItem("ToDoTable")/>
+
+function addItem(add){
+var x=document.getElementById(add);
+var calc=x.rows.length;
+var  row=x.insertRow(calc);
+var p=document.getElementById(t).value;
+var box1=row.insertBox(0);
+var elt=document.createElementById("input");
+elt.type="text";
+elt.style.width="100%";
+elt.name="txtbox[]";
+elt.value=vag;
+box.appendChild(elt);
+var bx=row.insertbox(1);
+var pr=document.createElement("input");
+pr.type="checkbox";
+pr.name="checkbox[]";
+ bx.appendChild(pr);
+ document.getElementById("t").value='';
+ }
